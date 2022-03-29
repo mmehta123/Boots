@@ -1,0 +1,42 @@
+.body{
+    margin: 0;
+    background-color: red;
+}
+.jumbotron{
+    background-color: rgb(123, 183, 187);
+    color: white;
+}  
+.brandName{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+a:link,:visited{
+    color:rgb(48, 51, 104);
+    text-decoration: none;
+}
+.hello h1{
+    font-size: 30px;
+    text-align:center;
+}
+.hello img{
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
+    width: 60%;
+    height: 60%;
+}
+button{
+    background-color: rgb(80, 155, 155);
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.footer{
+    padding-top:10px;
+    
+}
+
