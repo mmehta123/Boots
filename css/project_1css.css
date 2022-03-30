@@ -1,10 +1,7 @@
-.body{
-    margin: 0;
-    background-color: red;
-}
 .jumbotron{
     background-color: rgb(123, 183, 187);
     color: white;
+    margin-top: 80px;
 }  
 .brandName{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,17 +23,22 @@ a:link,:visited{
     width: 60%;
     height: 60%;
 }
-button{
+#next_page{
     background-color: rgb(80, 155, 155);
     color: white;
+    border: none;
     font-size: 20px;
     text-transform: capitalize;
-    padding: 5px;
+    padding: 10px;
     border-radius: 25px;
+}
+.navbar-dark{
+    background-color: rgb(41, 103, 103);
 }
 
 .footer{
     padding-top:10px;
+    margin-bottom: 0;
     
 }
 
