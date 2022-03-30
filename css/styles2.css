@@ -1,8 +1,15 @@
 .jumbotron{
     color: floralwhite;
     background-color: #9575cd;
+    margin-top:8%
 }
 .footer{
     background-color: #D1C4E9;
-
+    padding-top: 5%;
+}
+body{
+    
+}
+.navbar-dark{
+    background-color: #512D89;
 }

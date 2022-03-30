@@ -12,8 +12,27 @@
 </head>
 
 <body>
-
-    <header class="jumbotron">
+    
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top ">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#Navi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-1 navbar-brand mr-auto">
+                <h2>Sample</h2>
+            </div>
+            <div class="collapse navbar-collapse" id="Navi">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="jumbotron row-header">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -25,6 +44,10 @@
             </div>
         </div>
     </header>
+    <ol class=" col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">About Us</li>
+    </ol>
 
     <div class="container">
         <div class="row">
@@ -102,7 +125,10 @@
            </div>
         </div>
     </footer>
-    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

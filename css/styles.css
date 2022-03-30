@@ -6,6 +6,9 @@
 body{
     background-color: cornflowerblue;
 }
+.jumbotron{
+    margin-top: 5%;
+}
 .row-content{
     color: white;
     margin: 0px auto;
