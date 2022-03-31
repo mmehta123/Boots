@@ -102,12 +102,12 @@
                         <input class="col-md-9 form-control" type="text" placeholder="First Name" id="firstname" name="firstname"/> 
                     </div>
                     <div class="form-group row">
-                        <label for="lastname" class="col-md-3 class-form-label">Last name</label>
+                        <label for="lastname" class="col-md-3 col-form-label">Last name</label>
                         <input class="col-md-9 form-control" type="text" placeholder="Last Name" id="lastname" name="lastname" />
                     </div>
                     <div class="form-group row">
-                        <label for="phone" class="col-12 col-md-3 class-form-label">Phone</label>
-                        <select class="col-4 col-md-3 form-control" data-style="btn-primary" name="areacode" id="areacode">
+                        <label for="phone" class="col-12 col-md-3 col-form-label">Phone</label>
+                        <select class="col-4 col-md-3 form-control"  name="areacode" id="areacode">
                             <option value="none text-center">Select</option>
                             <option value="India">+91 (India)</option>
                             <option value="India">+92 (Pakistan)</option>
@@ -115,11 +115,22 @@
                         <input class="col-7 col-md-6 offset-1 offset-md-0 col-md-5 form-control" type="tel" placeholder="Phone Number" id="phone" name="phone" />
                     </div>
                     <div class="form-group row">
-                        <label for="email" class="col-md-3 class-form-label">Email</label>
+                        <label for="email" class="col-md-3 col-form-label">Email</label>
                         <input class="col-md-9 form-control" type="email" placeholder="E-mail" id="email" name="email" />
                     </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-form-label col-md-2">Your Feedback</label>
+                        <textarea class="col-md form-control" name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4 col-md-4 offset-md-1 text-right mt-1 pr-0">
+                            <input class="form-check-input" type="checkbox" name="approve" id="approve">
+                        </div>
+                        <label class="col-form-label col col-md pl-0 pt-0" for="approve"><strong>I agree to terms and
+                                conditions</strong></label>
+                    </div>
                     <div class="row justify-content-center mb-1">
-                        <button class="btn btn-info  ">Submit</button>
+                        <button class="btn btn-info">Submit</button>
                     </div>
                 </form>
             </div>
