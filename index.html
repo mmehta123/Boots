@@ -18,17 +18,59 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="50" width="55">Restro</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="50" width="55"></a>
             <div class="collapse navbar-collapse text-center" id="Navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href=""><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class=" fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
             </div>
     </nav>
+
+    <div class="modal fade" id="loginModal"  >
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button class="close" type="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group p-2">
+                            <div class="row">
+                                <label for="username" class="form-label col-sm-3">User Name:</label>
+                                <input type="text" class="form-control offset-1 col-sm-8" id="username" placeholder="User Name">
+                            </div>
+                            <div class="row  mt-2">
+                                <label for="password" class="form-label col-sm-3">Password:</label>
+                                <input type="password" class="form-control offset-1 col-sm-8" id="password" placeholder="Password">
+                            </div>
+                            <div class="row mt-2 justify-content-center">
+                                    <button class="btn btn-success">
+                                        Sign-In
+                                    </button>
+                            </div>
+                            <div class="row mt-2 justify-content-center">
+                                <a href="index.html" class="card  bg-warning p-2">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <header class="jumbotron row-header">
         <div class="container">
             <div class="row">
@@ -37,7 +79,12 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-6 col-sm-6 align-self-center">
-                            <a href="#table"><button class="btn btn-warning ">Reservations</button></a>
+                           
+                        
+                        
+                        
+                        <a href="#table"><button class="btn btn-warning" data-toggle="tooltip" data-placement="top" 
+                                data-html="true" title="Or call at <br><strong>+91-8756372322</strong>">Reserve table</button></a>
                     </div>
                 </div>
                 <div class="col-12 order-sm-first col-sm-6">
@@ -198,6 +245,10 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
 </body>
-
 </html>
